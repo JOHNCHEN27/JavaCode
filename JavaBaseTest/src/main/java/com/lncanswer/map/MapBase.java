@@ -12,7 +12,7 @@ public class MapBase {
         /**
          * Map:双列集合 存放的是一对键值对  第一个元素为键 第二个元素为值
          * 通过键 可以找到相应的值， 键是唯一的
-         * Map中的方法： put、get、remove、keySet等
+         * Map中的方法： put、get、remove、keySet、entrySet等
          * put方法 如果不存在键值，则会添加到map集合中， 如果已经存在相应的键值，
          * 那么会将原有的值覆盖，并且返回一个被覆盖的值
          */
