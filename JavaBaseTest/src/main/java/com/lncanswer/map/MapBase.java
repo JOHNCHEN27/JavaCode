@@ -64,6 +64,5 @@ public class MapBase {
         //lambda表达式如果方法只有一行 可以将大括号 分号 返回值(return)全部省略
         map.forEach((key,valye) ->  System.out.println(key + " = " + valye));
 
-
     }
 }
