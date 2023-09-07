@@ -1,4 +1,4 @@
-package com.lncanswer.map;
+package com.lncanswer.colletionAdvanced.map;
 
 import com.lncanswer.entity.Student;
 
