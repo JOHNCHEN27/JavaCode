@@ -12,7 +12,7 @@ import java.util.Collection;
  */
 public class CollectionBase {
     /**
-     * Colletion是所有单列集合的顶层接口（List、Set使它的实现类）
+     * Colletion是所有单列集合的顶层接口（List、Set是它的实现类）
      * 由于它是一个接口，我们不能直接创建它的对象 为了学习里面的方法创建ArrayList对象
      * 方法: add、remove、clear、contains、isEmpty、Size
      */
