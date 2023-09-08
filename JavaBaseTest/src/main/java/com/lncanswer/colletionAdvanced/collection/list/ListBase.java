@@ -1,7 +1,6 @@
 package com.lncanswer.colletionAdvanced.collection.list;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.ListIterator;
 
 /**
@@ -10,7 +9,7 @@ import java.util.ListIterator;
  * @description  List集合
  * @date 2023/9/7 17:10
  */
-public class List {
+public class ListBase {
     /**
      * List集合添加的元素是有序、重复、有索引的   像一条链一样
      * List是一个接口，不能直接创建它的对象，只能创建它的实现类的对象

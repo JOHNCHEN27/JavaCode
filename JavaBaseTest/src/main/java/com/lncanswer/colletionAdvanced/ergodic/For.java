@@ -22,7 +22,7 @@ public class For {
 
         //利用增强for进行遍历
         for (String s : collection) {
-            //s只是一个第三方遍历，每次遍历把集合中的元素放到s中，如果对s修改不会影响原来的数据
+            //s只是一个第三方变量，每次遍历把集合中的元素放到s中，如果对s修改不会影响原来的数据
             System.out.println(s);
         }
     }
