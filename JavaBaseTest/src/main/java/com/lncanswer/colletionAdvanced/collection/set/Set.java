@@ -9,5 +9,6 @@ package com.lncanswer.colletionAdvanced.collection.set;
 public class Set {
     /**
      * Set集合添加的元素是无序、不重复、无索引 跟List集合相反
+     * set是一个接口类 它的实现类有HashSet、LinkHashSet、TreeSet
      */
 }
