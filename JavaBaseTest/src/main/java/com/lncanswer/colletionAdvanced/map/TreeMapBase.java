@@ -120,5 +120,8 @@ public class TreeMapBase {
                 System.out.print(character + "(" + treeMap.get(character)+") ");
             }
         });
+
+        treeMap.forEach((Character character,Integer integer) ->
+                System.out.println(character+"(" + integer + ")"));
     }
 }

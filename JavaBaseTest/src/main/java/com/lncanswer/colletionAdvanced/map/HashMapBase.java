@@ -8,6 +8,7 @@ import java.util.function.BiConsumer;
 public class HashMapBase {
     public static void main(String [] agrs){
         /**
+         * HashMap底层是哈希表（数组、链表、红黑树）
          * 创建一个HashMap集合 键是学生对象,值是籍贯
          * 存储三个键值对元素并遍历
          * 要在学生对象中重写HashCode方法 才可以存放Hashmap中

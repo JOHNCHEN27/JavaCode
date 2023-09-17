@@ -13,7 +13,7 @@ import java.util.TreeSet;
 public class TreeSetBase {
 
     /**
-     * TreeSetBase：不重复、无索引、可排序
+     * TreeSet：不重复、无索引、可排序
      * 可排序是指：按照元素的默认规则（由小到大）排序
      * TreeSet底层：基于红黑树的数据结果实现排序，增删查改的性能都很好
      *
