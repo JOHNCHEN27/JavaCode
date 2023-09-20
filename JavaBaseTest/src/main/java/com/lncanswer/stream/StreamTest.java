@@ -89,7 +89,7 @@ public class StreamTest {
             return actor;
         }).collect(Collectors.toList());
 
-        collect.forEach(s -> System.out.println(s.getName() +":" + s.getAge() + "  "));
+         collect.forEach(s -> System.out.println(s.getName() +":" + s.getAge() + "  "));
 
     }
 }

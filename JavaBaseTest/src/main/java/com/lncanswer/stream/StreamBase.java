@@ -2,6 +2,8 @@ package com.lncanswer.stream;
 
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -48,6 +50,9 @@ public class StreamBase {
         //stream流中间方法的使用
         StreamBase streamBase = new StreamBase();
         streamBase.MiddleMethod();
+
+        //stream流终结方法的使用
+        streamBase.endMethod();
     }
 
     /**
@@ -72,6 +77,25 @@ public class StreamBase {
      * collect() 收集流中的数据，放到集合中
      */
     public void endMethod(){
+        ArrayList<String> list = new ArrayList<>();
+        Collections.addAll(list,"朝小野,18","杨华和,20","超英,20","柳市,22","杨晓霞,32","张甜甜,30");
+
+        //将流中的数据收集到map集合中 转换成map的第一个参数为键的规则，第二个参数为值的规则
+        Map<String, Integer> collectMap = list.stream().collect(Collectors.toMap(new Function<String, String>() {
+            //形参s 代表stream流中的每一个数据，数据类型对于流中每一个数据的类型
+            //返回值的类型表示键的类型
+            @Override
+            public String apply(String s) {
+                return s.split(",")[0];
+            }
+        }, new Function<String, Integer>() {
+            //将名字作为键，将年龄作为值
+            @Override
+            public Integer apply(String s) {
+                return Integer.parseInt(s.split(",")[1]);
+            }
+        }));
+        System.out.println(collectMap);
 
 
     }
