@@ -1,12 +1,14 @@
 package com.lncanswer.entity;
 
+import java.io.Serializable;
+
 /**
  * @author LNC
  * @version 1.0
  * @description 演员实体类
  * @date 2023/9/20 10:31
  */
-public class Actor {
+public class Actor implements Serializable {
     private String name;
     private Integer age;
 

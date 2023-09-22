@@ -1,12 +1,25 @@
 package com.lncanswer.entity;
 
+import java.io.Serializable;
+
 /**
  * @author LNC
  * @version 1.0
  * @description
  * @date 2023/9/16 17:54
  */
-public class Student1 implements Comparable<Student1>{  //实现Comparable接口
+public class Student1 implements Comparable<Student1>, Serializable { //实现Comparable接口
+    //生产唯一的序列号
+    private static final long serialVersionUID = 2130572893153902517L;
+
+    public Student1() {
+    }
+
+    public Student1(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
     private String name;
     private Integer age;
 
@@ -45,6 +58,13 @@ public class Student1 implements Comparable<Student1>{  //实现Comparable接口
 
         //每次比较之后要存的位置以及存在元素会再次调用compareTo方法再次比较 直到存入红黑树
 
+    }
 
+    @Override
+    public String toString() {
+        return "Student1{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
