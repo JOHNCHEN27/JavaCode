@@ -22,7 +22,8 @@ public class TicketThread2 implements Runnable{
     }
 
     //同步方法 在方法修饰符之后加上synchronized关键字 锁对象为this 如果是静态方法锁对象为类字节码
-    private synchronized boolean synchronizedMehtod() {
+    //此处的this指针是当前类对象的指针
+    private  synchronized boolean synchronizedMehtod() {
         System.out.println(this);
             if (ticket ==100){
                 return true;

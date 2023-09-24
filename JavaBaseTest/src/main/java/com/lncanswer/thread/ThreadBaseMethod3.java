@@ -12,8 +12,8 @@ public class ThreadBaseMethod3 {
     public static void main(String[] args) throws InterruptedException {
         /**
          * static void yield（） 出让线程/礼让线程
-         * 表示出让CPU的执行权，由CPU重写选择线程来执行
-         * 需要注意的是出让线程之后 CPU会重写选择线程，还是随机选择，可能还会选到此线程
+         * 表示出让CPU的执行权，由CPU重新选择线程来执行
+         * 需要注意的是出让线程之后 CPU会重新选择线程，还是随机选择，可能还会选到此线程
          */
 
         /**

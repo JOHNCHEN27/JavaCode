@@ -18,6 +18,7 @@ public class TicketTest2 {
     public static void main(String[] args) {
         //创建线程任务对象
         TicketThread2 t = new TicketThread2();
+        System.out.println(t);
 
         //创建线程对象来执行线程任务
         Thread t1 = new Thread(t);
