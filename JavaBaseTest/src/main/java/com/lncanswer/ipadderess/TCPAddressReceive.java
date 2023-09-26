@@ -28,9 +28,12 @@ public class TCPAddressReceive {
         //再利用缓冲流来提升效率
         BufferedReader reader = new BufferedReader(new InputStreamReader(accept.getInputStream()));
         int b;
+        //read方法会从连接通道里读取数据，直到读取到一个结束标记才会结束读取
+        //如果没有结束标记，则一直循环等待读取
         while ((b = reader.read()) != -1){
             System.out.print((char)b);
         }
+        accept.getOutputStream().write("已经成功接受到消息".getBytes());
         //释放资源
         accept.close();
         serverSocket.close();
